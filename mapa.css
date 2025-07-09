@@ -1,0 +1,22 @@
+
+.seccion-mapa.h1 {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 2em;
+    margin-top: 20px;
+    color: #333;
+}
+  .google-map {
+position: relative;
+padding-bottom: 50%;
+     
+}
+
+.google-map iframe {
+     height: 100%;
+     width: 100%;
+     left: 30px;
+     right: 10px;
+     position:absolute;
+     border-radius: 1%;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>¿Quiénes Somos? - HidroAlert</title>
+
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: url("../imagenes/fondo.jpg") no-repeat center center fixed;
+        background-size: cover; /* Cubrir toda la pantalla */
+        background-position: center; /* Centrar la imagen */
+        font-family: Arial, sans-serif;
+      }
+      .container {
+        text-align: center;
+        max-width: 1000px; /* Aumentar el ancho máximo */
+        padding: 40px; /* Aumentar el padding */
+        background-color: rgba(
+          255,
+          255,
+          255,
+          0.9
+        ); /* Fondo blanco con opacidad */
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      }
+      .logo {
+        max-width: 200px;
+        margin-right: 20px;
+      }
+      .corner-logo {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        max-width: 80px; /* Tamaño del logo en la esquina */
+      }
+      .content {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      .text {
+        flex: 1;
+        color: #343a40;
+        font-size: 1.1em; /* Aumentar el tamaño de la fuente */
+      }
+      h1 {
+        font-family: "Roboto", sans-serif; /* Cambiar fuente del título */
+        color: #007bff;
+        margin-bottom: 20px;
+      }
+      p {
+        line-height: 1.6;
+        margin-bottom: 15px;
+      }
+      .footer {
+        margin-top: 20px;
+        font-size: 0.9em;
+        color: #6c757d;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="imagenes/logo.png" alt="Logo Esquina" class="corner-logo" />
+    <div class="container">
+      <div class="content">
+        <img src="imagenes/logo-emp.png" alt="Logo HidroAlert" class="logo" />
+        <div class="text">
+          <h1>¿Quiénes Somos?</h1>
+          <p>
+            HidroAlert es una aplicación diseñada para monitorear y reportar de
+            manera rápida y eficaz los cortes y la contaminación del agua
+            potable en zonas urbanas y rurales del Perú. Sabemos que miles de
+            personas enfrentan interrupciones imprevistas en el servicio de
+            agua, así como problemas de calidad, sin contar con un canal
+            confiable para reportarlos o recibir alertas que les permitan
+            prevenir riesgos.
+          </p>
+          <p>
+            Frente a esta realidad, Healthy Solution propone una solución
+            innovadora: una plataforma que conecta a la comunidad con las
+            autoridades, permitiendo visibilizar los problemas y actuar de forma
+            oportuna. Nuestro objetivo es salvaguardar la salud, la higiene y el
+            bienestar de las poblaciones más vulnerables, promoviendo así un
+            acceso justo y seguro al agua.
+          </p>
+        </div>
+      </div>
+      <div class="footer">
+        &copy; 2023 HidroAlert. Todos los derechos reservados.
+      </div>
+    </div>
+  </body>
+</html>

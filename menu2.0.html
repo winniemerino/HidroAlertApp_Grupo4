@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menú HidroAlert</title>
+
+    <link rel="stylesheet" href="menu2.0.css" />
+    <link rel="stylesheet" href="reporte.css" />
+    <link rel="stylesheet" href="notificacion.css" />
+    <link rel="stylesheet" href="historial.css" />
+    <link rel="stylesheet" href="informate.css" />
+    <link rel="stylesheet" href="mapa.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <a href="ingresar.html" class="top-bar" target="_self">
+          <img src="imagenes/back.png" alt="Atrás" class="back-icon" />
+        </a>
+
+        <!-- Logo -->
+        <div class="logo">
+          <img src="imagenes/logo.png" alt="Logo" />
+          <span>HidroAlert</span>
+        </div>
+
+        <!-- Usuario -->
+        <div id="user-section">
+          <div class="user-info">
+            <div class="user-img-wrapper">
+              <img
+                id="user-image"
+                src="imagenes/user.png"
+                alt="User  Image"
+                class="user-img"
+              />
+              <button id="change-image-btn" class="icon-button">
+                <img src="imagenes/edit.png" alt="Editar Imagen" />
+              </button>
+            </div>
+          </div>
+
+          <span id="user-name">Nombre Apellido</span>
+          <div class="location-info">
+            <img src="imagenes/map.png" alt="Ubicación" />
+            <span id="user-location">Ubicación</span>
+          </div>
+        </div>
+
+        <hr class="divider" />
+
+        <!-- Menú -->
+        <div
+          class="menu-item"
+          onclick="mostrarSeccion('seccion-notificaciones')"
+        >
+          <img src="imagenes/notify.png" alt="Notificaciones" />
+          Notificaciones
+        </div>
+
+        <div class="menu-item" onclick="mostrarSeccion('seccion-mapa')">
+          <img src="imagenes/map.png" alt="Mapa" />
+          Mapa
+        </div>
+
+        <div class="menu-item" onclick="mostrarSeccion('seccion-historial')">
+          <img src="imagenes/history.png" alt="Historial" />
+          Historial
+        </div>
+
+        <div class="menu-item" onclick="mostrarSeccion('seccion-informate')">
+          <img src="imagenes/inform.png" alt="Infórmate" />
+          Infórmate
+        </div>
+
+        <!-- Botón reporte -->
+        <div class="button-container">
+          <button class="btn-report">
+            <img src="imagenes/report.png" alt="Reporte" /> Realizar un reporte
+          </button>
+        </div>
+
+        <div class="footer">
+          ¿Tienes problemas? Ingresa a <br /><strong>
+            <a
+              href="#"
+              onclick="mostrarSeccion('seccion-preguntas-frecuentes'); return false;"
+              >Preguntas Frecuentes</a
+            >
+          </strong>
+          <hr class="divider" />
+          <div
+            class="logout"
+            onclick="window.location.href='inicio.html';"
+            style="cursor: pointer"
+          >
+            <img src="imagenes/close.png" alt="Cerrar Sesión" /> Cerrar Sesión
+          </div>
+        </div>
+      </div>
+
+      <!-- Contenido -->
+      <div class="content">
+        <!-- NOTIFICACIONES -->
+        <div
+          class="content-section"
+          id="seccion-notificaciones"
+          style="display: none"
+        >
+          <div class="notificaciones-wrapper">
+            <div class="notificaciones-header">
+              <h2>Notificaciones</h2>
+              <img
+                src="iconos/configuracion.png"
+                alt="Configuración"
+                class="icono-config"
+              />
+            </div>
+
+            <div class="notificacion alerta-corte">
+              <img src="iconos/alert-notifi.png" alt="Alerta" />
+              <p>
+                Tienes una nueva alerta de corte programado el día
+                <strong>05 de Mayo a las 10pm</strong>.
+              </p>
+            </div>
+
+            <div class="notificacion reporte-actualizado">
+              <img src="iconos/reporte.png" alt="Reporte" />
+              <p>
+                Tu <strong>reporte realizado el día 13 de Abril</strong> tiene
+                una nueva actualización. <br />
+                <a
+                  href="#"
+                  onclick="mostrarSeccion('seccion-historial'); return false;"
+                  >Ver Historial de Reportes.</a
+                >
+              </p>
+            </div>
+
+            <div class="notificacion alerta-contaminacion">
+              <img src="iconos/alerta-agua.png" alt="Contaminación" />
+              <p>
+                Nueva <strong>alerta de Contaminación de Agua.</strong>
+                <a
+                  href="#"
+                  onclick="mostrarSeccion('seccion-mapa'); return false;"
+                  >Ver Mapa de zonas afectadas</a
+                ><br />
+                <a
+                  href="#"
+                  onclick="mostrarSeccion('seccion-informate'); return false;"
+                  >Infórmate</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- MAPA  -->
+        <div class="content-section" id="seccion-mapa" style="display: none">
+          <div class="mapa">
+            <h1>Mapa en tiempo real</h1>
+            <p>Seleccione una opción para visualizar las zonas afectadas:</p>
+            <input
+              type="radio"
+              id="opcion1"
+              name="grupo-opciones"
+              value="valor1"
+            />
+            <label for="opcion1">Corte imprevisto de agua</label> <br />
+            <input
+              type="radio"
+              id="opcion2"
+              name="grupo-opciones"
+              value="valor2"
+            />
+            <label for="opcion2">Contaminación de agua</label> <br />
+            <div class="google-map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31211.918640981512!2d-77.07031271708476!3d-12.078582326385089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8e3646ab8d7%3A0x848660d2fc40ce50!2zSmVzw7pzIE1hcsOtYQ!5e0!3m2!1ses!2spe!4v1750972155119!5m2!1ses!2spe"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- HISTORIAL -->
+        <div
+          class="content-section"
+          id="seccion-historial"
+          style="display: none"
+        >
+          <h2>Historial de Reportes</h2>
+          <p>Aquí se listarán los reportes realizados por el usuario.</p>
+        </div>
+        <!-- INFORMATE -->
+
+        <!-- Sección de INFORMACIÓN -->
+        <div
+          id="seccion-informate"
+          class="content-section"
+          style="display: none"
+        >
+          <h2>Infórmate y actúa:</h2>
+
+          <div class="card">
+            <strong>Métodos básicos para purificar el agua</strong>
+            <p>
+              Hierve durante al menos 3 minutos a fuego alto. Deja enfriar
+              tapado. Método recomendado por la OMS.
+            </p>
+            <img src="imagen/hervir.jpg" alt="Hervir agua" />
+          </div>
+
+          <div class="card">
+            <strong>¿Qué hacer si hay escasez de agua en tu zona?</strong>
+            <p>
+              Ten un bidón de emergencia con agua potable. Activa las
+              notificaciones en HidroAlert para enterarte a tiempo.
+            </p>
+            <img src="imagen/grifo.jpg" alt="Grifo" />
+          </div>
+
+          <div class="card">
+            <strong>Cuidado y uso responsable del agua</strong>
+            <p>
+              Dúchate en menos de 5 minutos. Cierra el caño mientras te cepillas
+              los dientes.
+            </p>
+            <img src="imagen/save.webp" alt="Ahorro de agua" />
+          </div>
+        </div>
+
+        <!-- PREGUNTAS FRECUENTES -->
+        <div class="content-section" id="seccion-preguntas-frecuentes">
+          <h1><strong>Preguntas Frecuentes</strong></h1>
+          <div class="faq-item">
+            <h3>¿Cómo puedo reportar un corte de agua?</h3>
+            <p class="faq-answer">
+              Puedes generar un reporte directamente desde nuestra plataforma
+              web seleccionando la opción "Generar Reportes" en el menú
+              principal. Deberás indicar la ubicación exacta y el tipo de
+              incidente que estás reportando.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h3>¿Necesito registrarme para recibir alertas?</h3>
+            <p class="faq-answer">
+              Sí, es necesario crear una cuenta para poder recibir alertas
+              personalizadas según tu ubicación y preferencias. El registro es
+              gratuito y rápido.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h3>¿Cómo se verifica la información de los reportes?</h3>
+            <p class="faq-answer">
+              Todos los reportes son verificados mediante una combinación de
+              datos enviados por usuarios y fuentes oficiales. Utilizamos
+              sistemas de geolocalización para confirmar la exactitud de cada
+              reporte antes de publicarlo.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3>¿Cuánto tiempo tarda en resolverse un corte reportado?</h3>
+            <p class="faq-answer">
+              El tiempo de respuesta varía según la gravedad y ubicación del
+              problema. En promedio, los equipos técnicos tardan entre 4 y 12
+              horas en resolver incidentes comunes, aunque casos complejos
+              pueden requerir más tiempo.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h3>¿Puedo consultar el historial de reportes en mi zona?</h3>
+            <p class="faq-answer">
+              Sí, en el apartado "Historial" puedes filtrar los reportes por
+              ubicación y fecha para ver todos los incidentes registrados en tu
+              área durante los últimos meses.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal-reporte" class="modal hidden">
+      <div class="modal-reporte-box">
+        <h2>
+          REPORTAR UN PROBLEMA
+          <img src="imagenes/alert.png" alt="!" class="icon-alert" />
+        </h2>
+
+        <!-- Opciones simplificadas -->
+        <div class="opciones-container">
+          <p class="opciones-titulo">Seleccione el tipo de problema:</p>
+          <div class="opciones-wrapper">
+            <label class="opcion-btn">
+              <input type="radio" name="problema" value="corte" />
+              <span class="opcion-circulo"></span>
+              Corte Imprevisto de Agua
+            </label>
+
+            <label class="opcion-btn">
+              <input type="radio" name="problema" value="contaminacion" />
+              <span class="opcion-circulo"></span>
+              Contaminación de Agua
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <p class="form-label">Adjunte evidencia:</p>
+          <div
+            class="upload-area"
+            onclick="document.getElementById('evidencia').click()"
+          >
+            <img
+              id="preview-image"
+              src=""
+              alt="Vista previa"
+              style="display: none"
+            />
+            <div id="upload-placeholder">
+              <img
+                src="imagenes/upload.png"
+                alt="Subir imagen"
+                class="upload-icon"
+              />
+            </div>
+            <input
+              type="file"
+              id="evidencia"
+              accept="image/*"
+              style="display: none"
+              onchange="mostrarVistaPrevia(this)"
+            />
+          </div>
+        </div>
+        <!-- Área de texto -->
+        <p class="form-label">Descripción o comentario:</p>
+        <textarea
+          class="form-box textarea-box"
+          placeholder="Describa el problema..."> </textarea>
+
+        <div class="botones-accion">
+          <button class="btn-generar" onclick="generarReporte()">
+            Generar Reporte
+          </button>
+          <button class="btn-cancelar" onclick="cerrarModal('modal-reporte')">
+            Cancelar
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal de Éxito -->
+    <div id="modal-exito" class="modal hidden">
+      <div class="modal-exito-box">
+        <img src="imagenes/check.png" alt="Éxito" class="check-icon" />
+        <p>Reporte generado correctamente.</p>
+        <button onclick="cerrarExito()">Aceptar</button>
+      </div>
+    </div>
+
+    <input type="file" id="file-input" accept="image/*" style="display: none" />
+
+    <script src="menu.js"></script>
+    <script src="reporte.js"></script>
+    <script src="notificacion.js"></script>
+    <script src="historial.js"></script>
+  </body>
+</html>
