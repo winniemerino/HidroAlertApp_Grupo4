@@ -5,23 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Menú HidroAlert</title>
 
-    <link rel="stylesheet" href="menu2.0.css" />
-    <link rel="stylesheet" href="reporte.css" />
-    <link rel="stylesheet" href="notificacion.css" />
-    <link rel="stylesheet" href="historial.css" />
-    <link rel="stylesheet" href="informate.css" />
-    <link rel="stylesheet" href="mapa.css" />
+    <link rel="stylesheet" href="../assets/styles/menu2.0.css" />
+    <link rel="stylesheet" href="../assets/styles/reporte.css" />
+    <link rel="stylesheet" href="../assets/styles/notificacion.css" />
+    <link rel="stylesheet" href="../assets/styles/historial.css" />
+    <link rel="stylesheet" href="../assets/styles/informate.css" />
+    <link rel="stylesheet" href="../assets/styles/mapa.css" />
   </head>
   <body>
     <div class="container">
       <div class="sidebar">
         <a href="ingresar.html" class="top-bar" target="_self">
-          <img src="imagenes/back.png" alt="Atrás" class="back-icon" />
+          <img src="../../imagenes/back.png" alt="Atrás" class="back-icon" />
         </a>
 
         <!-- Logo -->
         <div class="logo">
-          <img src="imagenes/logo.png" alt="Logo" />
+          <img src="../../imagenes/logo.png" alt="Logo" />
           <span>HidroAlert</span>
         </div>
 
@@ -31,19 +31,19 @@
             <div class="user-img-wrapper">
               <img
                 id="user-image"
-                src="imagenes/user.png"
+                src="../../imagenes/user.png"
                 alt="User  Image"
                 class="user-img"
               />
               <button id="change-image-btn" class="icon-button">
-                <img src="imagenes/edit.png" alt="Editar Imagen" />
+                <img src="../../imagenes/edit.png" alt="Editar Imagen" />
               </button>
             </div>
           </div>
 
           <span id="user-name">Nombre Apellido</span>
           <div class="location-info">
-            <img src="imagenes/map.png" alt="Ubicación" />
+            <img src="../../imagenes/map.png" alt="Ubicación" />
             <span id="user-location">Ubicación</span>
           </div>
         </div>
@@ -55,29 +55,29 @@
           class="menu-item"
           onclick="mostrarSeccion('seccion-notificaciones')"
         >
-          <img src="imagenes/notify.png" alt="Notificaciones" />
+          <img src="../../imagenes/notify.png" alt="Notificaciones" />
           Notificaciones
         </div>
 
         <div class="menu-item" onclick="mostrarSeccion('seccion-mapa')">
-          <img src="imagenes/map.png" alt="Mapa" />
+          <img src="../../imagenes/map.png" alt="Mapa" />
           Mapa
         </div>
 
         <div class="menu-item" onclick="mostrarSeccion('seccion-historial')">
-          <img src="imagenes/history.png" alt="Historial" />
+          <img src="../../imagenes/history.png" alt="Historial" />
           Historial
         </div>
 
         <div class="menu-item" onclick="mostrarSeccion('seccion-informate')">
-          <img src="imagenes/inform.png" alt="Infórmate" />
+          <img src="../../imagenes/inform.png" alt="Infórmate" />
           Infórmate
         </div>
 
         <!-- Botón reporte -->
         <div class="button-container">
           <button class="btn-report">
-            <img src="imagenes/report.png" alt="Reporte" /> Realizar un reporte
+            <img src="../../imagenes/report.png" alt="Reporte" /> Realizar un reporte
           </button>
         </div>
 
@@ -95,7 +95,7 @@
             onclick="window.location.href='inicio.html';"
             style="cursor: pointer"
           >
-            <img src="imagenes/close.png" alt="Cerrar Sesión" /> Cerrar Sesión
+            <img src="../../imagenes/close.png" alt="Cerrar Sesión" /> Cerrar Sesión
           </div>
         </div>
       </div>
@@ -112,14 +112,14 @@
             <div class="notificaciones-header">
               <h2>Notificaciones</h2>
               <img
-                src="iconos/configuracion.png"
+                src="../../iconos/configuracion.png"
                 alt="Configuración"
                 class="icono-config"
               />
             </div>
 
             <div class="notificacion alerta-corte">
-              <img src="iconos/alert-notifi.png" alt="Alerta" />
+              <img src="../../iconos/alert-notifi.png" alt="Alerta" />
               <p>
                 Tienes una nueva alerta de corte programado el día
                 <strong>05 de Mayo a las 10pm</strong>.
@@ -127,7 +127,7 @@
             </div>
 
             <div class="notificacion reporte-actualizado">
-              <img src="iconos/reporte.png" alt="Reporte" />
+              <img src="../../iconos/reporte.png" alt="Reporte" />
               <p>
                 Tu <strong>reporte realizado el día 13 de Abril</strong> tiene
                 una nueva actualización. <br />
@@ -140,7 +140,7 @@
             </div>
 
             <div class="notificacion alerta-contaminacion">
-              <img src="iconos/alerta-agua.png" alt="Contaminación" />
+              <img src="../../iconos/alerta-agua.png" alt="Contaminación" />
               <p>
                 Nueva <strong>alerta de Contaminación de Agua.</strong>
                 <a
@@ -216,7 +216,7 @@
               Hierve durante al menos 3 minutos a fuego alto. Deja enfriar
               tapado. Método recomendado por la OMS.
             </p>
-            <img src="imagen/hervir.jpg" alt="Hervir agua" />
+            <img src="../../imagen/hervir.jpg" alt="Hervir agua" />
           </div>
 
           <div class="card">
@@ -225,7 +225,7 @@
               Ten un bidón de emergencia con agua potable. Activa las
               notificaciones en HidroAlert para enterarte a tiempo.
             </p>
-            <img src="imagen/grifo.jpg" alt="Grifo" />
+            <img src="../../imagen/grifo.jpg" alt="Grifo" />
           </div>
 
           <div class="card">
@@ -234,7 +234,7 @@
               Dúchate en menos de 5 minutos. Cierra el caño mientras te cepillas
               los dientes.
             </p>
-            <img src="imagen/save.webp" alt="Ahorro de agua" />
+            <img src="../../imagen/save.webp" alt="Ahorro de agua" />
           </div>
         </div>
 
@@ -293,7 +293,7 @@
       <div class="modal-reporte-box">
         <h2>
           REPORTAR UN PROBLEMA
-          <img src="imagenes/alert.png" alt="!" class="icon-alert" />
+          <img src="../../imagenes/alert.png" alt="!" class="icon-alert" />
         </h2>
 
         <!-- Opciones simplificadas -->
@@ -328,7 +328,7 @@
             />
             <div id="upload-placeholder">
               <img
-                src="imagenes/upload.png"
+                src="../../imagenes/upload.png"
                 alt="Subir imagen"
                 class="upload-icon"
               />
@@ -362,7 +362,7 @@
     <!-- Modal de Éxito -->
     <div id="modal-exito" class="modal hidden">
       <div class="modal-exito-box">
-        <img src="imagenes/check.png" alt="Éxito" class="check-icon" />
+        <img src="../../imagenes/check.png" alt="Éxito" class="check-icon" />
         <p>Reporte generado correctamente.</p>
         <button onclick="cerrarExito()">Aceptar</button>
       </div>
@@ -370,9 +370,9 @@
 
     <input type="file" id="file-input" accept="image/*" style="display: none" />
 
-    <script src="menu.js"></script>
-    <script src="reporte.js"></script>
-    <script src="notificacion.js"></script>
-    <script src="historial.js"></script>
+    <script src="../assets/scripts/menu.js"></script>
+    <script src="../assets/scripts/reporte.js"></script>
+    <script src="../assets/scripts/notificacion.js"></script>
+    <script src="../assets/scripts/historial.js"></script>
   </body>
 </html>
