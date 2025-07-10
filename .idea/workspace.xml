@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa3c18e9-b99b-4ad7-a874-fcc035e2ad82" name="Changes" comment="Se modificó código para que las imágenes sean visibles">
+    <list default="true" id="aa3c18e9-b99b-4ad7-a874-fcc035e2ad82" name="Changes" comment="Mover index.html">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +53,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
     "junie.onboarding.icon.badge.shown": "true",
     "last_opened_file_path": "C:/Users/Winnie Merino/Downloads/HidroAlertApp/public/index.html",
@@ -73,15 +73,15 @@
       <recent name="C:\Users\Winnie Merino\Downloads\HidroAlertApp\public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Winnie Merino\Downloads\HidroAlertApp" />
       <recent name="C:\Users\Winnie Merino\Downloads\HidroAlertApp\public" />
       <recent name="C:\Users\Winnie Merino\Downloads\HidroAlertApp\public\pages.html" />
       <recent name="C:\Users\Winnie Merino\Downloads\HidroAlertApp\public\assets" />
       <recent name="C:\Users\Winnie Merino\Downloads\HidroAlertApp\public\imagen" />
-      <recent name="C:\Users\Winnie Merino\Downloads\HidroAlertApp\public\images" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.index.html">
-    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/HidroAlertApp/public/index.html" useBuiltInWebServerPort="true">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/HidroAlertApp/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="inicio.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/HidroAlertApp/index.html/inicio.html" useBuiltInWebServerPort="true">
@@ -125,6 +125,7 @@
       <updated>1752096569787</updated>
       <workItem from="1752096571862" duration="13296000" />
       <workItem from="1752154230432" duration="1364000" />
+      <workItem from="1752165603253" duration="371000" />
     </task>
     <task id="LOCAL-00001" summary="Se agregaron imágenes e iconos para alertas y navegación">
       <option name="closed" value="true" />
@@ -174,7 +175,31 @@
       <option name="project" value="LOCAL" />
       <updated>1752157129340</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="prueba de githubpages">
+      <option name="closed" value="true" />
+      <created>1752160955765</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1752160955765</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Prueba para gituhb pages">
+      <option name="closed" value="true" />
+      <created>1752161747385</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1752161747385</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Mover index.html">
+      <option name="closed" value="true" />
+      <created>1752165737836</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1752165737836</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,6 +250,9 @@
     <MESSAGE value="Se agregaron imágenes e iconos para alertas y navegación" />
     <MESSAGE value="Se ordenaron correctamente las carpetas como es requerido." />
     <MESSAGE value="Se modificó código para que las imágenes sean visibles" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se modificó código para que las imágenes sean visibles" />
+    <MESSAGE value="prueba de githubpages" />
+    <MESSAGE value="Prueba para gituhb pages" />
+    <MESSAGE value="Mover index.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mover index.html" />
   </component>
 </project>
