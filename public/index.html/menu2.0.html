@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="../assets/styles/menu2.0.css" />
     <link rel="stylesheet" href="../assets/styles/reporte.css" />
     <link rel="stylesheet" href="../assets/styles/notificacion.css" />
-    <link rel="stylesheet" href="../assets/styles/historial.css" />
     <link rel="stylesheet" href="../assets/styles/informate.css" />
     <link rel="stylesheet" href="../assets/styles/mapa.css" />
   </head>
@@ -344,9 +343,12 @@
         </div>
         <!-- Área de texto -->
         <p class="form-label">Descripción o comentario:</p>
+        <label for="problema-descripcion" class="sr-only">Descripción del problema</label>
         <textarea
-          class="form-box textarea-box"
-          placeholder="Describa el problema..."> </textarea>
+                id="problema-descripcion"
+                class="form-box textarea-box"
+                placeholder="Describa el problema...">
+        </textarea>
 
         <div class="botones-accion">
           <button class="btn-generar" onclick="generarReporte()">
